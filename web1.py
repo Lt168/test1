@@ -68,7 +68,7 @@ if page == "项目介绍":
         st.subheader("专业数据分析")
         st.write("1.各专业男女性别比例")
         # 仅修改此处：替换为你的截图路径
-        st.image("D:/streamlit_env/jietu.png", use_container_width=True)
+        st.image("jietu.png", use_container_width=True)
         st.caption("学生数据分析示意图")
 
     st.divider()
@@ -312,9 +312,9 @@ elif page == "成绩预测":
         # 学习建议+图片
         if pred_score >= 60:
             st.success("🎉 预测成绩及格~建议保持当前学习状态，巩固薄弱知识点！")
-            st.image("D:/streamlit_env/congratulations.jpg", width=400)
+            st.image("congratulations.jpg", width=400)
         else:
             st.warning("💪 预测成绩未及格~建议增加学习时长、提高出勤率，及时向老师和同学请教！")
-            st.image("D:/streamlit_env/sad.jpg", width=400)
+            st.image("sad.jpg", width=400)
     elif submit_btn:
         st.error("❌ 模型未加载，无法预测")
